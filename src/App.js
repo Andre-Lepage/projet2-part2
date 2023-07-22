@@ -23,7 +23,7 @@ function App() {
         <Route path='/Results/:category' element={<Results></Results>} />
         <Route path='/Join' element={<Join></Join>} />
         <Route path='/Help' element={<Help />}/>
-        <Route element={<NotFound></NotFound>} />
+        <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
     </Router>
     
