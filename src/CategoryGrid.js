@@ -4,7 +4,6 @@ import ConsoleGames from "./assets/Console-Games.png";
 import AllGames from "./assets/All-Games.png";
 import MobileGames from "./assets/Mobile-Games.png";
 import FPSGames from "./assets/FPS-Games.png";
-import MOBAGames from "./assets/MOBA-Games.png";
 import ArcadeGames from "./assets/Arcade-Games.png";
 import moba from "./assets/moba.png"
 import { useNavigate} from 'react-router-dom';
@@ -30,7 +29,7 @@ const CategoryGrid = () => {
       {gridData.map((item, index) => (
         <div key={index} className="grid-item" onClick={() => handleImageClick(item.category)}>
             {item.text && <p className='grid-text'>{item.text}</p>}
-            {item.imageUrl && <img className="grid-image" src={item.imageUrl} alt={`Image ${index}`} />}
+            {item.imageUrl && <img className="grid-image" src={item.imageUrl} alt={` ${index}`} />}
           
         </div>
       ))}

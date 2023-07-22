@@ -48,7 +48,7 @@ const Results = () => {
 
     useEffect(() => {
         
-        if(category != null & category != "" & category != "all"){
+        if(category !== null & category !== "" & category !==  "all"){
             document.getElementById(category).checked = true
             addFilter(category);
         }

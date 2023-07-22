@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import React, { useRef } from 'react';
 import { useTranslation } from "react-i18next";
 import './i18n'
